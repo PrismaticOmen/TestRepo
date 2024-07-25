@@ -43,6 +43,7 @@ function gameEngine(chosenStr)  {
             alert("lose");
             break;   
     }
+    return;
 };
 
 export  {computerSelect, gameEngine};
