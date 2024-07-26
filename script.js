@@ -1,11 +1,15 @@
 import  {gameEngine} from "./storage.js";
-//event listeners not working
+//event listeners not working as intended
+
 
 const scissorMechanics = document.getElementById("scissorsButton");
-scissorMechanics.addEventListener("click", gameEngine("scissors"));
+scissorMechanics.addEventListener("click", () => {gameEngine("scissors")});
 
 const paperMechanics = document.getElementById("paperButton");
-paperMechanics.addEventListener("click", gameEngine("paper"));
+paperMechanics.addEventListener("click", () => {gameEngine("paper")});
 
 const rockMechanics = document.getElementById("rockButton");
-rockMechanics.addEventListener("click", gameEngine("rock"));
+rockMechanics.addEventListener("click", () => {gameEngine("rock")});
+
+const scoreBoard = document.getElementById("scoreBoard");
+scoreBoard.textContent = 
